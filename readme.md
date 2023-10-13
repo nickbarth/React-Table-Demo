@@ -8,3 +8,5 @@
 - Reorderable Columns
 - Infinite Scrolling
 - Testing
+
+&copy; Nick Barth 2023
