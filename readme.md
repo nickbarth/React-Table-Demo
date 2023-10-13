@@ -1,4 +1,4 @@
-# React Sortable Table with Auth Context
+# React Table Demo
 
 ### Features
 
