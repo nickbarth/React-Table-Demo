@@ -64,7 +64,7 @@ const UserTable = () => {
     await sleep(1000);
 
     const currentPage = Math.ceil(userCount / PER_PAGE);
-    const url = `/data/users.json?sortedBy=${sortedBy}&sortOrder=${
+    const url = `/React-Table-Demo/data/users.json?sortedBy=${sortedBy}&sortOrder=${
       sortAscending ? "asc" : "desc"
     }&page=${currentPage}&pageSize=${PER_PAGE}`;
 
