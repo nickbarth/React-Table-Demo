@@ -61,10 +61,10 @@ const UserTable = () => {
   const fetchUsers = async () => {
     dispatch({ type: "START_FETCH_USERS" });
 
-    // await sleep(1000);
+    await sleep(1000);
 
     const currentPage = Math.ceil(userCount / PER_PAGE);
-    const url = `/xata/users.json?sortedBy=${sortedBy}&sortOrder=${
+    const url = `/data/users.json?sortedBy=${sortedBy}&sortOrder=${
       sortAscending ? "asc" : "desc"
     }&page=${currentPage}&pageSize=${PER_PAGE}`;
 
@@ -108,7 +108,7 @@ const UserTable = () => {
     const handleScroll = async (e) => {
       const { scrollTop, scrollHeight, clientHeight } = e.currentTarget;
       if (scrollHeight - scrollTop === clientHeight) {
-        // await sleep(1000);
+        await sleep(1000);
         handleLoadMore(userCount);
       }
     };
