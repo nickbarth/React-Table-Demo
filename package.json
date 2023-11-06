@@ -1,6 +1,7 @@
 {
   "name": "user-table",
   "version": "0.1.0",
+  "homepage": "https://www.nicbarth.com/React-Table-Demo/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,20 +18,15 @@
     "createUsers": "node scripts/createUsers.mjs",
     "build": "react-scripts build",
     "test": "react-scripts test --detectOpenHandles",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": ["react-app", "react-app/jest"]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -40,6 +36,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@faker-js/faker": "^8.1.0",
+    "gh-pages": "^6.0.0",
     "react-test-renderer": "^18.2.0"
   }
 }
